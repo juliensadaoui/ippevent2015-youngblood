@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class PaymentResource {
 
 	@Autowired
-	@Visa
+	@CreditCard @Visa
 	private PaymentService visa;
 
 	@Autowired
-	@MasterCard
+	@CreditCard @MasterCard
 	private PaymentService masterCard;
 
 	@Autowired

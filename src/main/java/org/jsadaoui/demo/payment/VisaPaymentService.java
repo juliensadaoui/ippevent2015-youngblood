@@ -3,7 +3,7 @@ package org.jsadaoui.demo.payment;
 import org.springframework.stereotype.Component;
 
 @Component
-@Visa
+@CreditCard @Visa
 public class VisaPaymentService implements PaymentService {
 
 	@Override
